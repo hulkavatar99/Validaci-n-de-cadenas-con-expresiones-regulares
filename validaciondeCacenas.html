@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <form name="CP" action="validar.html">
+        <p>municipio:</p>
+        <input type="text" id="municipio"/>
+        <p>codigopostal</p>
+        <input type="text" id="codigopostal"/>
+        <p></p>
+        <input type="button" id="send" value="ENVIAR" onclick="codigo()"/>
+    </form>
+    <script>
+       
+        function codigo(){
+            m=document.CP.municipio.value;
+            c=document.CP.codigopostal.value;
+            var codigobacalar=/^(?:77900|7790[4-7]|77910|7791[3-7]|77920|7792[3-7]|77930|7793[3-7]|77940|7794[3-7])$/;
+            var codigobenito=/^(?:77500|7750[3-9]|77510|7751[3-9]|77520|7752[4-8]|77530|7753[3-9]|77560|77567|77569)$/;
+            var codigocozumel=/^(?:77600|77609|77610|77613|77620|77622|77645|77660|7766[4-7]|77670|7767[3-6]|77689)$/;
+            var felipecarrillo=/^(?:77100|7710[4-8]|77110|7711[4-8]|77120|7712[1-3]|77125|77130|77135|77140|7714[4-8]|77150|77156|77158|77160|77163|77169|77170|7717[4-8]|77180|77185|77188|77189|77190|77196|77197|77198|77200|77210|7721[4-7]|77220|77229|77230|77238|77239|77240|77249|77250|77259)$/;
+            var islamujeres=/^(?:77400|7740[2-4]|7740[6-9]|77410|77412)$/;
+            var josemariamorelos=/^(?:77800|7780[5-9]|77850|77858|77859|77870|7787[4-6]|77878|77880|77882|77883|77889|77890|77893|77894|77895|77896|77898|77899)$/;
+            var lazarocardenas=/^(?:77300|7730[2-7]|77310|77320|77330|77333|77350|77355|7736077366|77367|77368|77369|77370|77376|77377|77378|77380|77384|77385|77386)$/;
+            var othonpblanco=/^(?:77000|77008|77009|77010|7701[1-9]|77020|7702[3-9]|77030|7703[4-9]|77040|77041|77048|77049|77050|77053|77059|77060|77070|77079|77080|7708[2-7]|77090|77098|77099|77950|77953|77954|77955|77957|77959|77960|77962|77963|77965|77966|77970|77966|77970|77976|77977|77980|7798[3-7]|77990|77992|77994|77995|77997)$/;
+            var puertomorelos=/^(?:77580|77586|77590|77594)$/;
+            var solidaridad=/^(?:77710|7771[2-4]|77710|7771[6-8]|77720|7772[3-8]|77730|7773[3-5]|77740)$/;
+            var tulum=/^(?:77760|77762|77764|77766|77768|77772|77774|77776|77785|77786|77793|77794|77795|77796)$/;
+            if (/^(?:bacalar|Bacalar|BACALAR)$/.test(m))
+            {
+                if((codigobacalar.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para bacalar: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de bacalar");
+                }
+            }else if(/^(?:benito juarez|Benito Juarez|BENITO JUAREZ)$/.test(m)){
+                if((codigobenito.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para bacalar: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de benito juarez");
+
+                }
+            }else if(/^(?:cozumel|Cozumel|COZUMEL)$/.test(m)){
+                if((codigocozumel.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para cozumel: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de cozumel");
+                }
+            }   
+            else if(/^(?:cozumel|Cozumel|COZUMEL)$/.test(m)){
+                if((codigocozumel.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para cozumel: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de cozumel");
+                }
+            }        
+                else if(/^(?:felipe carrillo puerto|Felipe Carrillo Puerto|FELIPE CARRILLO PUERTO)$/.test(m)){
+                if((felipecarrillo.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para felipe carrillo puerto: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de felipe carrillo puerto");
+                }
+            }   
+                else if(/^(?:isla mujeres|Isla Mujeres|ISLA MUJERES)$/.test(m)){
+                if((islamujeres.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para isla mujeres: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de isla mujeres");
+                }
+            }
+            else if(/^(?:jose maria morelos|Jose Maria Morelos|JOSE MARIA MORELOS)$/.test(m)){
+                if((josemariamorelos.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para jose maria morelos: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de jose maria morelos");
+                }
+            } 
+            else if(/^(?:lazaro cardenas|Lazaro Cardenas|LAZARO CARDENAS)$/.test(m)){
+                if((lazarocardenas.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para lazaro cardenas: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de lazaro cardenas");
+                }
+            }
+            else if(/^(?:othon p. blanco|Othon P. Blanco|OTHON P. BLANCO)$/.test(m)){
+                if((othonpblanco.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para othon p. blanco: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de othon p blanco");
+                }
+            }
+            else if(/^(?:puerto morelos|Puerto Morelos|PUERTO MORELOS)$/.test(m)){
+                if((puertomorelos.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para puerto morelos: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de puerto morelos");
+                }
+            }
+            else if(/^(?:solidaridad|Solidaridad|SOLIDARIDAD)$/.test(m)){
+                if((solidaridad.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para solidaridad: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de solidaridad");
+                }
+            }
+            else if(/^(?:tulum|Tulum|TULUM)$/.test(m)){
+                if((tulum.test(c)) && (/^\d{5}$/.test(c)))                {
+                    alert("Tu CP es valido para tulum: "+c);
+                    document.CP.submit();
+                }
+                else{
+                    alert("Escriba solo 5 digitos y verifique los codigos de tulum");
+                }
+            }                                                                          
+        }
+    </script>
+</body>
+</html>
